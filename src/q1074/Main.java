@@ -8,30 +8,18 @@ import java.util.StringTokenizer;
 public class Main {
 
 	static int N, r, c, cnt, result;
-	static boolean flag;
 
 	public static void solve(int x, int y, int n) {
+//		System.out.println(x + " " + y + " " + n);
 		if(n==2) {
 			cnt++;
-			if(x-1 == r && y-1 == c) {
-				result = cnt;
-				flag = true;
-			}
+			if(x-1 == r && y-1 == c) result = cnt;
 			cnt++;
-			if(x-1 == r && y == c) {
-				result = cnt;
-				flag = true;
-			}
+			if(x-1 == r && y == c) result = cnt;
 			cnt++;
-			if(x == r && y-1 == c) {
-				result = cnt;
-				flag = true;
-			}
+			if(x == r && y-1 == c) result = cnt;
 			cnt++;
-			if(x == r && y == c) {
-				result = cnt;
-				flag = true;
-			}
+			if(x == r && y == c) result = cnt;
 
 			return;
 		}
